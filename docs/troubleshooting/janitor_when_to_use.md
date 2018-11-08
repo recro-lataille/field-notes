@@ -19,10 +19,10 @@ If your service has reserved resources, you can use the framework cleaner docker
   - **"Incomplete uninstall of package [{package_name}] due to Mesos unavailability"**
 
 
-**additional check**
-The service may be inactive and will not be shown in the DC/OS UI, but you can find it by using this CLI command:
-   -- dcos service --inactive
-Reservations on a slave for a completed service not successfully removed
+**additional checks**
+* The service may be inactive and will not be shown in the DC/OS UI, but you can find it by using this CLI command:
+   - -- dcos service --inactive
+* Reservations on a slave for a completed service not successfully removed
     - run status.py script and search for the framework in question
        -https://github.com/justinrlee/dcos-toys/blob/master/dcos-status/status.py
          
