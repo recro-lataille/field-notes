@@ -8,12 +8,12 @@ If your service has reserved resources, you can use the framework cleaner docker
      
 **signs that janitor may be needed:**
 
-**at install**
-* if a framework will not deploy and in the debug interface or logs a message states that the framework or service name already exhists 
+* **at install**
+   - if a framework will not deploy and in the debug interface or logs a message states that the framework or service name already exhists 
 
-**at uninstall**
-* if after uninstall the service remains in the state of **Deleting**
-   - may or not appear healthy in https://{dcos_url}/marathon 
+* **at uninstall**
+   - if after uninstall the service remains in the state of **Deleting**
+      - may or not appear healthy in https://{dcos_url}/marathon 
 
 * after running "dcos package uninstall {package_name}" you recieve a message:
   - **"Incomplete uninstall of package [{package_name}] due to Mesos unavailability"**
