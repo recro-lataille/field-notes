@@ -1,4 +1,4 @@
-If your service has reserved resources, you can use the framework cleaner docker image, mesosphere/janitor or janitor.py script, to simplify the process of removing your service instance from ZooKeeper and destroying all the data associated with it.
+If your service has had issues installing or uninstalling, you can use the framework cleaner docker image, mesosphere/janitor or janitor.py script, to simplify the process of removing your service instance from ZooKeeper/mesos and destroying all the data associated with it.
 
 **states that may require janitor**
   - inconsistancies between mesos, marathon, and/or zookeeper
